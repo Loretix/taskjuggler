@@ -238,14 +238,6 @@ task WMGame "Web & Mobile Game" {
     }
   }
 
-  taskreport "Gantt Chart" {
-    headline "Project Gantt Chart"
-    columns hierarchindex, name, start, end, effort, duration, chart
-    timeformat "%a %Y-%m-%d"
-    loadunit days
-    hideresource 1
-  }
-
 }
 
 
@@ -333,6 +325,15 @@ taskreport overview "" {
   hideresource @all
   balance cost rev
   caption 'All effort values are in man days.'
+}
+
+# A traditional Gantt chart with a project overview.
+taskreport "Gantt Chart" {
+  headline "Project Gantt Chart"
+  columns hierarchindex, name, start, end, effort, duration, chart
+  timeformat "%a %Y-%m-%d"
+  loadunit days
+  hideresource 1
 }
 
 
