@@ -180,8 +180,8 @@ task WMGame "Web & Mobile Game" {
     responsible dev1
     depends WMGame.tback.tBEd
     task tGUIdB "Evaluación y decisión de la nube" {
-      effort 9d
-      actual:effort 15d
+      effort 3d
+      actual:effort 1d
       allocate dev3
       journalentry 2023-04-11 "Problems with the GUI design tool" {
         author dev3
@@ -190,7 +190,7 @@ task WMGame "Web & Mobile Game" {
       }
     }
     task tFEcB "Despliegue" {
-      effort 5d
+      effort 1d
       allocate dev1
       depends WMGame.tcloud.tGUIdB
     }
