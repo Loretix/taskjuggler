@@ -164,7 +164,7 @@ task WMGame "Web & Mobile Game" {
     task tGUIdA "Android GUI Design" {
       effort 9d
       actual:effort 15d
-      allocate dev3
+      allocate loreto
       journalentry 2023-04-28 "Problems with the GUI design tool in android" {
         author dev3
         alert yellow
