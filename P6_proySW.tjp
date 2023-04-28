@@ -343,7 +343,7 @@ taskreport overview "" {
 
 # A traditional Gantt chart with a project overview.
 taskreport newReport "" {
-  scenarios actual
+  scenarios plan
   headline "Estado Inicial"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
